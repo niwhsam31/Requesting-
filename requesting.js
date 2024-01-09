@@ -1,5 +1,6 @@
 let no_bt = document.querySelector(".no_bt");
 no_bt.addEventListener("mouseover",moveBt);
+let asking_text = document.querySelector(".asking");
 
 function moveBt(){
   let i = Math.floor(Math.random()*90) + 1;
@@ -28,6 +29,10 @@ function show(){
   clippath2.classList.add("hide");
   clippath3.classList.add("hide");
   after_yes_div.classList.add("show");
+  no_bt.classList.add("hide");
+  yes_button.classList.add("hide");
+  asking_text.classList.add("hide");
+
   yey();
 }
 
