@@ -7,29 +7,46 @@
   position: absolute;
   left: 27vw;
 }
+.asking{
+  font-size: 4vh;
+  position: absolute;
+  font-family: 'Pacifico', cursive;
+  top: 69vh;
+  left: 35vw;
+  color: #F875AA;
+}
 .yes_bt{
   height: 7vh;
   width: 10vw;
-  font-size: 3vh;
+  font-size: 4vh;
   border: unset;
   background-color:#F875AA;
   box-shadow: 10px 8px 20px 10px #FFDFDF;
   border-radius: 30px;
   position: absolute;
+  font-family: 'Pacifico', cursive;
   top: 80vh;
   left: 39vw;
+}
+.yes_bt:hover{
+  box-shadow: 10px 8px 20px 10px #FFF6F6;
+  background-color:#f875aab9;
 }
 .no_bt{
   height: 7vh;
   width: 10vw;
-  font-size: 3vh;
+  font-size: 4vh;
   border: unset;
   background-color:#F875AA;
   box-shadow: 10px 8px 20px 10px #FFDFDF;
   border-radius: 30px;
   position: absolute;
+  font-family: 'Pacifico', cursive;
   top: 80vh;
   left: 53vw;
+}
+.no_bt:hover{
+  box-shadow: 10px 8px 20px 10px #F875AA;
 }
 .container{
   display: flex;
@@ -44,6 +61,21 @@
   background: unset;
   left: -1vw;
 }
+.hide{
+  visibility: hidden;
+}
+.mocha2{
+  height: 31vh;
+  position: absolute;
+  background: unset;
+  left: 17vw;
+  visibility: hidden;
+  border-bottom: 2px solid black;
+  -webkit-box-shadow: -1px 50px 39px -17px rgba(0,0,0,0.73);
+-moz-box-shadow: -1px 50px 39px -17px rgba(0,0,0,0.73);
+box-shadow:0px 20px 25px -27px rgba(0,0,0,0.73);
+}
+
 .heart1{
   height: 5vh;
   position: absolute;
@@ -106,7 +138,7 @@
   overflow: hidden;
   white-space: nowrap;
   animation: typing 1s linear infinite;
-
+  font-family: 'Pacifico', cursive;
 }
 @keyframes heart3_ani {
   0%{
@@ -196,13 +228,13 @@
   clip-path: ellipse(25% 40% at 50% 50%);
   border: 2px solid black;
   background: #FFF6F6;
-  height: 9.56vh;
-  width: 19vw;
+  height: 11.56vh;
+  width: 23vw;
   position: absolute;
-  top: 33vh;
-  left: 1vw;
+  top: 31vh;
+  left: -3vw;
   text-align: center;
-  font-size: 11px;
+  font-size: 1.7vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -213,8 +245,8 @@
   border: 2px solid black;
   background:#FFF6F6;
   position: absolute;
-  top: 31vh;
-  left: 15vw;
+  top: 30vh;
+  left: 14vw;
   height: 20vh;
   width: 2.5vw;
 }
@@ -225,22 +257,137 @@
   position: absolute;
   height: 7vh;
   width: 1.5vw;
-  top: 39vh;
-  left: 17vw;
+  top: 38vh;
+  left: 16vw;
 }
 .please_div{
   background-color: #FFF6F6;
 }
 @keyframes typing {
   from {
-    width: 3em;
+    width: 2.6em;
   }
   to {
     width: 100%;
   }
 }
+.clip_path1another{
+  clip-path: ellipse(25% 40% at 50% 50%);
+  border: 2px solid black;
+  background: #FFF6F6;
+  height: 11.56vh;
+  width: 23vw;
+  position: absolute;
+  top: 31vh;
+  left: -3vw;
+  text-align: center;
+  font-size: 1.7vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: cursive;
+  visibility: hidden;
+}
+.please_div2{
+  background-color: #FFF6F6;
+}
+.please_text2{
+  position: relative;
+  left: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 1s linear infinite;
+  font-family: 'Pacifico', cursive;
+}
 
-@media screen and (max-width: 700px){
+.animation_clippath1another{
+  animation: clippath_animation 0.2s ease-in 0.2s;
+  animation-fill-mode: forwards;
+}
+.animation_clippath2{
+  animation: clippath_animation 0.2s ease-in 0.1s;
+  animation-fill-mode: forwards;
+}
+.animation_clippath3{
+  animation: clippath_animation 0.2s ease-in 0s; 
+  animation-fill-mode: forwards;
+}
+
+@keyframes clippath_animation {
+  from{
+    scale: 0.01;
+    visibility: hidden;
+  }
+  to{
+    scale: 1;
+    visibility: visible;
+  }
+}
+.show{
+  visibility: visible;
+}
+
+.after_yes{
+  position: absolute;
+  height: 35vh;
+  width: 60vw;
+  background-color: #AEDEFC;
+  top: 68vh;
+  left: 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+.after_yes_text{
+  background-color: #AEDEFC;
+  display: inline-block;
+  color: #F875AA;
+  font-family: 'Pacifico', cursive;
+  font-size: 5vh;
+  position: relative;
+  bottom: 10vh;
+  box-shadow: inset 2px 2px 20px 1px #F875AA ;
+  border-radius: 20px;
+}
+.show{
+  visibility: visible;
+}
+.credit_text{
+  display: inline-block;
+  background-color: #AEDEFC;
+  font-size: 2vh;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 96vh;
+  left: 85vw;
+}
+
+@media screen and (max-width: 600px){
+  .after_yes{
+    position: absolute;
+    height: 44vh;
+    width: 96vw;
+    background-color: #AEDEFC;
+    top: 68vh;
+    left: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    }
+    .after_yes_text{
+    background-color: #AEDEFC;
+    display: inline-block;
+    color: #F875AA;
+    font-family: 'Pacifico', cursive;
+    font-size: 5vh;
+    position: relative;
+    bottom: 10vh;
+    border-radius: 20px;
+    text-align: center;
+    }
   .clip_path1{
     clip-path: ellipse(25% 40% at 50% 50%);
     border: 2px solid black;
@@ -300,6 +447,86 @@
     position: absolute;
     top: 80vh;
     left: 55vw;
+  }
+  .asking{
+    font-size: 3vh;
+    position: absolute;
+    font-family: 'Pacifico', cursive;
+    top: 69vh;
+    left: 8vw;
+    color: #F875AA;
+  }
+  .mocha2{
+    height: 31vh;
+    position: absolute;
+    background: unset;
+    left: 0vw;
+    visibility: hidden;
+  }
+  .clip_path1another{
+    clip-path: ellipse(25% 40% at 50% 50%);
+    border: 2px solid black;
+    background: #FFF6F6;
+    height: 8.56vh;
+    width: 62vw;
+    position: absolute;
+    top: 29vh;
+    left: -41vw;
+    text-align: center;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+  }
+  .please_div2{
+    background-color: #FFF6F6;
+  }
+  .please_text2{
+    position: relative;
+    left: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 1s linear infinite;
+    font-family: 'Pacifico', cursive;
+  }
+  .animation_clippath1another{
+    animation: clippath_animation 0.2s ease-in 0.2s;
+    animation-fill-mode: forwards;
+  }
+  .animation_clippath2{
+    animation: clippath_animation 0.2s ease-in 0.1s;
+    animation-fill-mode: forwards;
+  }
+  .animation_clippath3{
+    animation: clippath_animation 0.2s ease-in 0s; 
+    animation-fill-mode: forwards;
+  }
+  @keyframes clippath_animation {
+    from{
+      scale: 0.01;
+      visibility: hidden;
+    }
+    to{
+      scale: 1;
+      visibility: visible;
+    }
+  }
+  .show{
+    visibility: visible;
+  }
+  .hide{
+    visibility: hidden;
+  }
+  .credit_text{
+    display: inline-block;
+    background-color: #AEDEFC;
+    font-size: 2vh;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 97vh;
+    left: 56vw;
   }
 }
 
